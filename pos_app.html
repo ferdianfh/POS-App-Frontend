@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS App: Ordering Foods In No Time</title>
+    <style>
+      @font-face {
+        font-family: "Airbnb";
+        src: url(./fonts/AirbnbCereal-Light.ttf) format("truetype");
+      }
+
+      * {
+        font-family: "Airbnb";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background: #FFF; */
+      }
+
+      .padding-header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .menu-icon {
+        margin-left: 1.7em;
+      }
+      /* Styling for sidebar toggle menu */
+      .side-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        z-index: 1;
+        height: 100%;
+        width: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+      }
+      .mn-icons-margin {
+        margin-bottom: 2em;
+      }
+      .close-btn {
+        position: absolute;
+        top: 0;
+      }
+      .close-btn:hover,
+      .open-btn:hover {
+        cursor: pointer;
+      }
+
+      /* styling for header content */
+      .header-content {
+        display: flex;
+        flex-direction: row;
+      }
+      .food-menu-header {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      }
+      .cart-header {
+        flex: 1;
+        text-align: center;
+        box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid #cecece;
+      }
+      .search-icon {
+        margin-right: 2em;
+      }
+
+      /* styling for main content */
+      .main-content {
+        display: flex;
+        flex-direction: row;
+      }
+      .food-menu-content {
+        flex: 2;
+        /* height: 100%; */
+        background: rgba(190, 195, 202, 0.3);
+      }
+      .cart-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        border: 1px solid #cecece;
+      }
+      .cute-img {
+        margin-top: 4em;
+      }
+      .desc-text {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #cecece;
+      }
+
+      /* styling cards */
+      #cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .menu-items {
+        margin: 0.8em;
+      }
+      .card-img {
+        width: 250px;
+      }
+      .card-name {
+        font-size: 1.2em;
+      }
+      .card-text {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header content start -->
+    <header class="header-content">
+      <!-- sidebar menu start -->
+      <nav id="menu" class="side-menu">
+        <div
+          class="menu-icon close-btn padding-header"
+          onclick="closeSideMenu()"
+        >
+          <img src="./src/icons/ham-menu.svg" alt="Hamburger Menu" />
+        </div>
+        <a class="menu-icon mn-icons-margin" href="#">
+          <img src="./src/icons/food-menu.svg" alt="Food Menu" />
+        </a>
+        <a class="menu-icon mn-icons-margin" href="#">
+          <img src="./src/icons/order-history.svg" alt="Order History" />
+        </a>
+        <a class="menu-icon mn-icons-margin" href="#">
+          <img src="./src/icons/add-menu.svg" alt="Add Menu" />
+        </a>
+      </nav>
+      <!-- sidebar menu end -->
+
+      <!-- header content: food menu section start -->
+      <section class="food-menu-header padding-header">
+        <img
+          class="menu-icon open-btn"
+          src="./src/icons/ham-menu.svg"
+          alt="Hamburger Menu"
+          onclick="openSideMenu()"
+        />
+        <h2>Food Items</h2>
+        <img
+          class="search-icon"
+          src="./src/icons/search-menu.svg"
+          alt="Searc Menu"
+        />
+      </section>
+      <!-- header content: food menu section end -->
+
+      <!-- header content: cart section start -->
+      <section class="cart-header padding-header">
+        <h3>Cart</h3>
+      </section>
+      <!-- header content: cart section end -->
+    </header>
+    <!-- Header content end -->
+
+    <!-- Main content start -->
+    <main class="main-content">
+      <section class="food-menu-content">
+        <div id="cards" class="card-menu"></div>
+      </section>
+
+      <!-- main conte -->
+      <section class="cart-content">
+        <div class="cute-img">
+          <img src="./src/icons/cutie.svg" alt="Cutie" />
+        </div>
+        <h2 class="head-text">Your cart is empty</h2>
+        <p class="desc-text">Please add some items from the menu</p>
+      </section>
+    </main>
+    <!-- Main content end -->
+
+    <!-- Script -->
+    <script type="text/javascript" src="./script/sidebarMenu.js"></script>
+    <script type="text/javascript" src="./script/displayMenu.js"></script>
+  </body>
+</html>
