@@ -1,0 +1,23 @@
+/* styling cards */
+#cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu-items {
+  margin: 0.8em;
+}
+.menu-items:hover {
+  cursor: pointer;
+}
+.card-img {
+  width: 250px;
+}
+.card-name {
+  font-size: 1.2em;
+}
+.card-text {
+  font-size: 1.3em;
+  font-weight: bold;
+}
