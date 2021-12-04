@@ -112,6 +112,9 @@
       .menu-items {
         margin: 0.8em;
       }
+      .menu-items:hover {
+        cursor: pointer;
+      }
       .card-img {
         width: 250px;
       }
@@ -150,12 +153,9 @@
 
       <!-- header content: food menu section start -->
       <section class="food-menu-header padding-header">
-        <img
-          class="menu-icon open-btn"
-          src="./src/icons/ham-menu.svg"
-          alt="Hamburger Menu"
-          onclick="openSideMenu()"
-        />
+        <div class="menu-icon open-btn" onclick="openSideMenu()">
+          <img src="./src/icons/ham-menu.svg" alt="Hamburger Menu" />
+        </div>
         <h2>Food Items</h2>
         <img
           class="search-icon"
