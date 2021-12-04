@@ -53,6 +53,13 @@
   overflow: auto;
   background: rgba(190, 195, 202, 0.3);
 }
+.food-menu-content::-webkit-scrollbar {
+  width: 5px;
+  background: #cecece;
+}
+.food-menu-content::-webkit-scrollbar-thumb {
+  background: rgba(126, 126, 126, 0.3);
+}
 .cart-content {
   flex: 1;
   display: flex;
