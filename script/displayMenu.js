@@ -4,7 +4,7 @@
 const menuItems = document.getElementById("cards");
 
 const displayMenu = () => {
-  foodMenus.map((menu) => {
+  foodMenus.forEach((menu) => {
     menuItems.innerHTML += `
       <div class="menu-items">
         <img src="${menu.image}" class="card-img" alt="${menu.name}">
