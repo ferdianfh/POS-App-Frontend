@@ -1,0 +1,136 @@
+.cart-text {
+  font-size: 1.5em;
+}
+.cart-badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cart-badge-count {
+  background: #57cad5;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  padding: 0.1em 0.4em;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.selected-menu-section {
+  height: 70%;
+  overflow: auto;
+}
+.selected-menu-section::-webkit-scrollbar {
+  width: 5px;
+  background: #cecece;
+}
+.selected-menu-section::-webkit-scrollbar-thumb {
+  background: rgba(126, 126, 126, 0.3);
+}
+.cart-selected-menu {
+  margin: 1em 0.5em 0.1em 0.3em;
+  padding: 0.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sltd-mn-img {
+  width: 110px;
+  border-radius: 5px;
+}
+.sltd-mn-info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5em;
+}
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.sltd-mn-name {
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin-top: 0.3em;
+}
+.total-price {
+  font-size: 1em;
+  font-weight: bolder;
+  margin-top: 1.7em;
+  margin-right: 1em;
+}
+.units {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  color: #82de3a;
+  margin-top: 0.5em;
+  /* margin-bottom: 0; */
+}
+.plus,
+.number,
+.minus {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 1px solid #82de3a;
+  padding: 0.1em 0.5em;
+}
+.plus,
+.minus {
+  background: rgba(130, 222, 58, 0.2);
+  cursor: pointer;
+}
+
+/* buttons order confirmation */
+.order-confirm {
+  height: 30%;
+}
+.subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.ppn-text {
+  margin-left: 1em;
+  text-align: left;
+}
+.order-confirm-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+.order-confirm-buttons button {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.checkout-btn {
+  background-color: #57cad5;
+}
+.cancel-order-btn {
+  background-color: #f24f8a;
+}
+.cancel-order-btn:hover,
+.checkout-btn:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+.checkout-btn:active {
+  background-color: #fff;
+  color: #57cad5;
+  box-shadow: 0 0 1px 2px #57cad5;
+}
+.cancel-order-btn:active {
+  background-color: #fff;
+  color: #f24f8a;
+  box-shadow: 0 0 1px 2px #f24f8a;
+  transition: 0.3s;
+}
