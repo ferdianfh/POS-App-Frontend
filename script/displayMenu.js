@@ -7,10 +7,10 @@ const displayMenu = () => {
   foodMenus.forEach((menu) => {
     menuItems.innerHTML += `
       <div class="menu-items">
-        <img src="${menu.image}" class="card-img" alt="${menu.name}">
+        <img src="${menu.image}" class="card-img" alt="${menu.name}" onclick="selectMenu(${menu.id})">
         <div class="card-body">
             <p class="card-name">${menu.name}</p>
-            <p class="card-text">Rp ${menu.price}.000</p>
+            <p class="card-text">Rp. ${menu.price}.000</p>
         </div>
       </div>
     `;
