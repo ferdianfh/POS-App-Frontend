@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/style-home.css" />
     <link rel="stylesheet" href="./style/sidebar-menu.css" />
     <link rel="stylesheet" href="./style/display-menu.css" />
+    <link rel="stylesheet" href="./style/modal-add-menu.css" />
     <style></style>
   </head>
 
@@ -28,7 +29,7 @@
         <a class="menu-icon mn-icons-margin" href="#">
           <img src="./src/icons/order-history.svg" alt="Order History" />
         </a>
-        <a class="menu-icon mn-icons-margin" href="#">
+        <a id="modal-btn" class="menu-icon mn-icons-margin" href="#">
           <img src="./src/icons/add-menu.svg" alt="Add Menu" />
         </a>
       </nav>
@@ -72,8 +73,57 @@
     </main>
     <!-- Main content end -->
 
+    <!-- BEGIN: Add New Menu Items -->
+    <div class="modal">
+      <div class="modal-add-menu">
+        <h2 class="input-form">Add Item</h2>
+        <div class="input-form">
+          <label for="name" class="input-label">Name</label>
+          <input
+            class="input-add-menu"
+            type="text"
+            id="name"
+            name="food-name"
+          />
+        </div>
+        <div class="input-form">
+          <label for="image" class="input-label">Image</label>
+          <input
+            class="input-add-menu"
+            type="url"
+            id="image"
+            name="food-image"
+          />
+        </div>
+        <div id="input-price" class="input-form">
+          <label for="price" class="input-label">Price</label>
+          <input
+            class="input-add-menu"
+            type="text"
+            id="price"
+            name="food-price"
+          />
+        </div>
+        <div id="select-box" class="input-form">
+          <label for="category" class="input-label">Category</label>
+          <select class="input-add-menu" name="category" id="category">
+            <option>Main Course</option>
+            <option>Drink</option>
+            <option>Dessert</option>
+          </select>
+        </div>
+        <div class="btn-add-menu">
+          <button id="cancel-menu" class="cancel-btn">Cancel</button>
+          <button id="add-menu" class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- END: Add New Menu Items -->
+
     <!-- Script -->
     <script type="text/javascript" src="./script/sidebarMenu.js"></script>
     <script type="text/javascript" src="./script/displayMenu.js"></script>
+    <script type="text/javascript" src="./script/modalAddMenu.js"></script>
+    <script type="text/javascript"></script>
   </body>
 </html>
