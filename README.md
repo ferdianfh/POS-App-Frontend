@@ -31,3 +31,5 @@ Here are some snippets about this app:
 ## POS App Update!
 
 Hello there! **POS App** is currently in development process.
+
+Last Update: Monday, 06/12/2021
