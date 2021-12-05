@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/sidebar-menu.css" />
     <link rel="stylesheet" href="./style/display-menu.css" />
     <link rel="stylesheet" href="./style/modal-add-menu.css" />
+    <link rel="stylesheet" href="./style/cart.css" />
     <style></style>
   </head>
 
@@ -50,7 +51,10 @@
 
       <!-- header content: cart section start -->
       <section class="cart-header padding-header">
-        <h3>Cart</h3>
+        <div class="cart-badge">
+          <h3 class="cart-text">Cart</h3>
+          <div class="cart-badge-count">0</div>
+        </div>
       </section>
       <!-- header content: cart section end -->
     </header>
@@ -59,16 +63,26 @@
     <!-- Main content start -->
     <main class="main-content">
       <section class="food-menu-content">
+        <!-- display menu items from database/API here -->
         <div id="cards" class="card-menu"></div>
       </section>
 
-      <!-- main conte -->
+      <!-- main content -->
       <section class="cart-content">
-        <div class="cute-img">
-          <img src="./src/icons/cutie.svg" alt="Cutie" />
+        <div class="selected-menu-section">
+          <!-- Display selected menu here -->
+          <div class="empty-message">
+            <div class="cute-img">
+              <img src="./src/icons/cutie.svg" alt="Cutie" />
+            </div>
+            <h2 class="head-text">Your cart is empty</h2>
+            <p class="desc-text">Please add some items from the menu</p>
+          </div>
         </div>
-        <h2 class="head-text">Your cart is empty</h2>
-        <p class="desc-text">Please add some items from the menu</p>
+
+        <div class="order-confirm">
+          <!-- Display total price -->
+        </div>
       </section>
     </main>
     <!-- Main content end -->
@@ -125,6 +139,7 @@
     <script type="text/javascript" src="./script/sidebarMenu.js"></script>
     <script type="text/javascript" src="./script/displayMenu.js"></script>
     <script type="text/javascript" src="./script/modalAddMenu.js"></script>
+    <script type="text/javascript" src="./script/cart.js"></script>
     <script type="text/javascript"></script>
   </body>
 </html>
