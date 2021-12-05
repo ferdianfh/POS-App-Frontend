@@ -1,0 +1,66 @@
+const foodMenus = [
+  {
+    id: 1,
+    name: "Espresso",
+    image: "./src/img/espresso.png",
+    price: 10,
+    category: "Drink",
+  },
+  {
+    id: 2,
+    name: "Coffee Latte",
+    image: "./src/img/coffee-latte.png",
+    price: 15,
+    category: "Drink",
+  },
+  {
+    id: 3,
+
+    name: "Cappucino",
+    image: "./src/img/cappucino.png",
+    price: 5,
+    category: "Drink",
+  },
+  {
+    id: 4,
+    name: "Red Velvet Latte",
+    image: "./src/img/redvelvet-latte.png",
+    price: 33,
+    category: "Drink",
+  },
+  {
+    id: 5,
+    name: "Choco Rhum",
+    image: "./src/img/chocorum.png",
+    price: 28,
+    category: "Dessert",
+  },
+  {
+    id: 6,
+    name: "Black Forest",
+    image: "./src/img/blackforest.png",
+    price: 30,
+    category: "Dessert",
+  },
+  {
+    id: 7,
+    name: "Chicken Katsu Dabu-dabu",
+    image: "./src/img/chickenkatsu.png",
+    price: 60,
+    category: "Main Course",
+  },
+  {
+    id: 8,
+    name: "Salmon Truffle Teriyaki",
+    image: "./src/img/salmon-truffle.png",
+    price: 60,
+    category: "Main Course",
+  },
+  {
+    id: 9,
+    name: "Wiener Schnitzel",
+    image: "./src/img/wiener.png",
+    price: 69,
+    category: "Main Course",
+  },
+];
