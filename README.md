@@ -34,4 +34,4 @@ Hello there! **POS App** is currently in development process.
 
 - Update readme file (23/12/2021 07:03 WIB)
 
-Last Update: Monday, 23/12/2021
+Last Update: Thursday, 23/12/2021
