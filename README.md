@@ -12,19 +12,19 @@ Pages that currently available in **POS App**:
 
 Here are some snippets about this app:
 
-### Home
+- Home
 
 ![Home](./src/rd-img/home.png)
 
-### Home with Sidebar Menu
+- Home with Sidebar Menu
 
 ![Home Sidebar](./src/rd-img/home-sidebar.png)
 
-### Home with Filled Cart
+- Home with Filled Cart
 
 ![Home Cart](./src/rd-img/home-cart.png)
 
-### Home with Add New Menu Modal
+- Home with Add New Menu Modal
 
 ![Home Add Menu Modal](./src/rd-img/home-add-menu.png)
 
@@ -32,4 +32,6 @@ Here are some snippets about this app:
 
 Hello there! **POS App** is currently in development process.
 
-Last Update: Monday, 06/12/2021
+- Update readme file (23/12/2021 07:03 WIB)
+
+Last Update: Monday, 23/12/2021
